@@ -2,6 +2,8 @@
 #
 #     Program: Gerbtris
 #     Author:  Gerbil (@M_C_Stott)
+#     Version: 1.1   16/11/2020
+#        Removed local echo
 #     Version: 1.0   02/10/2020
 #     
 #     Gerbtris is the Tetris game witten in bash.
@@ -31,6 +33,8 @@
 #     Enjoy the game.
 #
 
+trap "stty echo" EXIT  #Turns on local echo if script is exited/ended.
+stty -echo #Turns off local echo so key press control chars aren't seen.
 
 CONTROL_LIMIT=1   #Delay to accept key press
 SHAPE_X=5 #position of shape. Default for new shape is [4,1]
