@@ -3,6 +3,7 @@ The Tetris game written in bash
 
 Program: Gerbtris
 Author:  Gerbil (@M_C_Stott)
+Version: 1.1   16/11/2020
 Version: 1.0   02/10/2020
 
 Gerbtris is the Tetris game witten in bash.
